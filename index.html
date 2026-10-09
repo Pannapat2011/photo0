@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ระบบฝากรูปภาพองค์กร - Farco International Co., Ltd.</title>
+    <title>ระบบฝากรูปภาพองค์กร - บริษัท สยาม ฮาร์เวสต์ พรีเมี่ยม จำกัด</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
 
@@ -100,7 +100,7 @@
     <div class="upload-container">
         <div class="header">
             <h1>ระบบฝากรูปภาพส่วนกลาง</h1>
-            <p>Farco International Co., Ltd.</p>
+            <p>บริษัท สยาม ฮาร์เวสต์ พรีเมี่ยม จำกัด</p>
         </div>
 
         <div class="drop-zone" id="drop-zone">
@@ -128,7 +128,7 @@
     </div>
 
     <script>
-        // [!] ตรงนี้สำคัญ เอา URL ของ Apps Script ตัวใหม่ที่มึงเพิ่ง Deploy วางแทนที่เลย
+        // [!] เอา URL ของ Apps Script ล่าสุดของมึงมาวางตรงนี้นะ
         const UPLOAD_API_URL = 'https://script.google.com/macros/s/AKfycbwBh1vO8rLJbsLAREreYrn3VFrYIQ7cMJ8_DMLjdLLjnQhgD_-lGUEBQjcdwtTVnS5Q/exec';
 
         const fileInput = document.getElementById('file-input');
@@ -214,7 +214,7 @@
 
                 const compressed = await compressImage(file);
                 const payload = {
-                    fileName: "FARCO_IMG_" + new Date().getTime() + ".webp",
+                    fileName: "SIAM_HARVEST_IMG_" + new Date().getTime() + ".webp",
                     mimeType: compressed.mimeType,
                     base64Data: compressed.base64Data
                 };
